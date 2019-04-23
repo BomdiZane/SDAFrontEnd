@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+	<Head>
+		<title>SDA Training - Home</title>
+
+		<meta charset='utf-8' />
+		<meta name='author' content='Mbomndih Munang <dzedock@yahoo.com> (https://bomdisoft.com)' />
+		<meta name='keywords' content='Software development, academy, training, html, css, javascript' />
+		<meta name='description' content='Introduction to html, css and javascript' />
+		<meta name='viewport' content='minimum-scale=1.0, initial-scale=1.0' />
+		<meta name='theme-color' content='#1888a8' />
+
+		<link rel='stylesheet' href='../CSS2/home.css'>
+		<link rel='icon' type='image/x-icon' href='../static/images/icon.png' />
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous' />
+	</Head>
+	<body>
+		<!-- Page header -->
+		<header>
+			<div>
+				<i class='fas fa-bars'></i>
+				<p class='brandName'><span>SDA</span>Training</p>
+			</div>
+			<nav>
+				<a href='home.html' class='selectedMenu' title='Home'>
+					<i class='fas fa-home'></i>
+				</a>
+				<a href='blog.html' title='Blog'>
+					<i class='fas fa-blog'></i>
+				</a>
+				<a href='calculator.html' title='Calculator'>
+					<i class='fas fa-calculator'></i>
+				</a>
+				<a href='register.html' title='Account'>
+					<i class='fas fa-user-circle'></i>
+				</a>
+			</nav>
+		</header>
+
+		<!-- Page content -->
+		<section>
+			<h4>Paragraphs</h4>
+			<p>
+				OUTER ipsum dolor sit amet consectetur, adipisicing elit. Debitis quae, molestias totam veritatis distinctio quibusdam nisi voluptatibus nobis eveniet, veniam consequatur sapiente repellendus. Provident dolorum est id pariatur labore soluta.
+			</p>
+			
+			<div>
+				<p>
+					INNER ipsum dolor sit amet consectetur <strong>adipisicing elit</strong>. Voluptates laboriosam tempora <em>reprehenderit</em> vitae ad culpa minima quibusdam voluptate et voluptatibus obcaecati qui eligendi corrupti impedit, fugit perferendis ab similique. Quisquam!
+				</p>
+	
+				<figure>
+					<img src='../Static/images/solid.jpg' alt='Image of solid transparent ball' />
+					<figcaption>Source: google.com</figcaption>
+				</figure>
+	
+				<p>
+					FIRST ipsum dolor, sit amet consectetur adipisicing elit. Ab saepe adipisci <abbr  title='World Wide Web'>WWW</abbr> asperiores fugit odio at ratione quo laborum accusantium nulla magnam nihil? Dolorum consequuntur molestias aspernatur consectetur distinctio?
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<h4>Videos</h4>
+			<figure>
+				<video controls>
+					<source src='../Static/videos/kubernetes.mp4' type='video/mp4'>
+					Your browser does not support the video tag.
+				</video>
+				<figcaption>Kubernetes the easy way</figcaption>
+			</figure>
+			<p>
+				SECOND ipsum dolor sit amet consectetur adipisicing elit. Quam, officia! Libero assumenda impedit officiis cum tempora, dolore voluptas earum amet! Excepturi deserunt debitis assumenda quibusdam earum cupiditate fuga officiis dolores.
+			</p>
+
+			<blockquote>
+				asperiores fugit odio at ratione quo laborum accusantium nulla magnam nihil? Dolorum consequuntur molestias aspernatur consectetur distinctio?
+			</blockquote>
+
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur et minus enim temporibus ipsa debitis ab maiores odio aliquam nisi libero maxime distinctio sunt nobis hic facilis, recusandae fugiat ullam.</p>
+
+			<figure>
+				<iframe src='https://www.youtube.com/embed/rrT6v5sOwJg' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+				<figcaption>Material design by google</figcaption>
+			</figure>
+
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptate nesciunt animi maiores deleniti illo optio excepturi ea fugit facere similique, qui, neque totam doloribus dolore molestiae sint nihil aliquam.
+			</p>
+		</section>
+
+		<section>
+			<h4>Lists</h4>
+			<div id='listHolder'>
+				<ul>
+					<li>Bacon</li>
+					<li>Mangoes</li>
+					<li>Plum</li>
+				</ul>
+				<ol>
+					<li>Bacon</li>
+					<li>Mangoes</li>
+					<li>Plum</li>
+				</ol>
+			</div>
+		</section>
+
+		<section>
+			<h4>Tables</h4>
+			<table>
+				<caption>Table of CSS selectors</caption>
+				<thead>
+					<tr>
+						<th>Selector</th>
+						<th>Example</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>*</td>
+						<td>*</td>
+						<td>Selects all elements</td>
+					</tr>
+					<tr>
+						<td>.class</td>
+						<td>.menu</td>
+						<td>Selects all elements with class='menu'</td>
+					</tr>
+					<tr>
+						<td>#id</td>
+						<td>#submit</td>
+						<td>Selects all elements with class='submit'</td>
+					</tr>
+					<tr>
+						<td>element</td>
+						<td>p</td>
+						<td>Selects all &lt;p&gt; elements</td>
+					</tr>
+					<tr>
+						<td>element, element</td>
+						<td>div, p</td>
+						<td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+					</tr>
+					<tr>
+						<td>element element</td>
+						<td>div p</td>
+						<td>Selects all &lt;p&gt; elements inside &lt;div&gt; elements</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<button>Click Me</button>
+		</section>
+
+		<!-- Page footer -->
+		<footer>
+			<div>
+				<p id='brandNameFoot' class='brandName'><span>SDA</span>Training</p>
+				<div>
+					<span>
+						<h5>COMPANY</h5>
+						<a href='#'>About</a>
+						<a href='#'>Contact Us</a>
+						<a href='#'>Terms of Service</a>
+						<a href='#'>Privacy Policy</a>
+					</span>
+					<span>
+						<h5>SUPPORT</h5>
+						<a href='#'>Help</a>
+						<a href='#'>Documentation</a>
+						<a href='#'>Customer Service</a>
+					</span>
+				</div>
+			</div>
+			<form method='post' action='register.php'>
+				<h5>Subscribe to newsletters</h5>
+				<input type='text' placeholder='name' />
+				<input type='email' placeholder='email' />
+				<input type='submit' value='Subscribe' />
+			</form>
+			<small>Copyright &copy; 2019</small>
+		</footer>
+	</body>
+</html>
