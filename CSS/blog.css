@@ -1,17 +1,7 @@
 @import 'partials/template.css';
 @import 'partials/form.css';
+@import 'themes/dark.css';
 
-body, section{ background-color: var(--primary-black); }
-
-header{
-	/* border-bottom: 1px solid var(--secondary-green); */
-}
-
-footer{
-	border-top: 1px solid var(--info-color);
-}
-
-header, section, footer{ box-shadow: none; }
 section{ min-height: 100vh; }
 
 #articleHolder{

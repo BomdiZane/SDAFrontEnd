@@ -1,8 +1,12 @@
 @import 'partials/template.css';
 @import 'partials/form.css';
+@import 'themes/dark.css';
 
-section{
-	margin: 20vh 0;
+section{ 
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 #calculatorFrame{
@@ -18,6 +22,7 @@ section{
 		'cell7  cell8  cell9  cella'
 		'cell0  cell0  cellp  celle';
 	background-color: lightgreen;
+	box-shadow: 0 0 8px 2px rgb(20, 20, 20);
 }
 
 #calculatorFrame span{
@@ -49,9 +54,7 @@ section{
 	text-align: right;
 	width: 100%;
 }
-#history{
-	color: var(--secondary-grey);
-}
+#history{ color: var(--secondary-grey); }
 #results{
 	font-size: 2.5rem;
 	padding: 0;
@@ -79,9 +82,8 @@ section{
 #calculatorFrame .control{ background-color: var(--primary-yellow); }
 #calculatorFrame #celle, #calculatorFrame #cellc{ background-color: var(--primary-green); }
 
-#calculatorFrame .control:hover, #calculatorFrame #celle:hover, #calculatorFrame #cellc:hover{ background-color: var(--primary-green); }
-
-
-#results{
-	overflow: hidden;
+#calculatorFrame .control:hover, #calculatorFrame #celle:hover, #calculatorFrame #cellc:hover{
+	background-color: var(--primary-green); 
 }
+
+#results{ overflow: hidden; }
