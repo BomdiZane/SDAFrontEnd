@@ -2,6 +2,9 @@
 @import 'partials/form.css';
 @import 'partials/table.css';
 @import 'partials/button.css';
+@import 'themes/dark.css';
+
+section{ box-shadow: var(--default-shadow), var(--default-shadow); }
 
 section > div{
 	width: 100%;

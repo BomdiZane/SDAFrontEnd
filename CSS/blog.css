@@ -2,7 +2,11 @@
 @import 'partials/form.css';
 @import 'themes/dark.css';
 
-section{ min-height: 100vh; }
+section{ 
+	min-height: 100vh; 
+	box-shadow: none;
+	background-color: unset;
+}
 
 #articleHolder{
 	width: 100%;
@@ -22,7 +26,7 @@ article{
 	box-shadow: var(--default-shadow);
 	margin: 10px;
 	color: var(--secondary-grey);
-	background-color: var(--secondary-black);
+	background-color: var(--secondary-blue);
 	border-radius: var(--default-radius);
 }
 

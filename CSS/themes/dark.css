@@ -1,3 +1,7 @@
 body, section{ background-color: var(--primary-black); }
+section{ 
+	background-color: var(--secondary-blue);
+	color: var(--secondary-grey); 
+}
+header, footer{ box-shadow: none; }
 footer{ border-top: 1px solid var(--info-color); }
-header, section, footer{ box-shadow: none; }

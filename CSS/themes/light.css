@@ -1,0 +1,6 @@
+body{ 
+	background-color: var(--secondary-white);
+	color: var(--primary-black);
+}
+section{ background-color: var(--primary-white); }
+header, footer{ box-shadow: var(--default-shadow); }

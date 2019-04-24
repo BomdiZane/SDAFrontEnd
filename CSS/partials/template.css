@@ -9,6 +9,7 @@
 	--primary-green: lightgreen;
 	--secondary-green: #18a888;
 	--default-blue: #00bfff;
+	--secondary-blue: #1f2933;
 	--primary-yellow: gold;
 	--secondary-yellow: goldenrod;
 	--primary-red: tomato;
@@ -20,7 +21,7 @@
 	--secondary-black: #262b30;
 	--info-color: #777;
 	--default-radius: 2px;
-	--default-shadow: 0 3px 6px rgba(0,0,0,0.1);
+	--default-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 *{
@@ -57,10 +58,6 @@ a{
 body{
 	margin: 0;
 	font: large 'Indie Flower';
-	background-color: var(--secondary-white);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-attachment: fixed;
 	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
@@ -92,8 +89,6 @@ section{
 	margin: 20px 0;
 	overflow: hidden;
 	box-shadow: var(--default-shadow);
-	background-color: white;
-
 }
 
 noscript{
