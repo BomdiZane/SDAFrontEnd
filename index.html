@@ -10,7 +10,7 @@
 		<meta name='viewport' content='minimum-scale=1.0, initial-scale=1.0' />
 		<meta name='theme-color' content='#1888a8' />
 
-		<link rel='stylesheet' href='./CSS/home.css'>
+		<link rel='stylesheet' href='./CSS/index.css' />
 		<link rel='icon' type='image/x-icon' href='./static/images/icon.png' />
 		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous' />
 	</Head>
@@ -25,13 +25,13 @@
 				<a href='#' class='selectedMenu' title='Home'>
 					<i class='fas fa-home'></i>
 				</a>
-				<a href='./HTML/05 blog.html' title='Blog'>
+				<a href='./HTML/blog.html' title='Blog'>
 					<i class='fas fa-blog'></i>
 				</a>
-				<a href='./HTML/06 calculator.html' title='Calculator'>
+				<a href='./HTML/calculator.html' title='Calculator'>
 					<i class='fas fa-calculator'></i>
 				</a>
-				<a href='./HTML/07 register.html' title='Account'>
+				<a href='./HTML/register.html' title='Account'>
 					<i class='fas fa-user-circle'></i>
 				</a>
 			</nav>
@@ -41,34 +41,34 @@
 		<section>
 			<h4>Paragraphs</h4>
 			<p>
-				OUTER ipsum dolor sit amet consectetur, adipisicing elit. Debitis quae, molestias totam veritatis distinctio quibusdam nisi voluptatibus nobis eveniet, veniam consequatur sapiente repellendus. Provident dolorum est id pariatur labore soluta.
+				INNER ipsum dolor sit amet consectetur <strong>adipisicing elit</strong>. Voluptates laboriosam tempora <em>reprehenderit</em> vitae ad culpa minima quibusdam voluptate et voluptatibus obcaecati qui eligendi corrupti impedit, fugit perferendis ab similique. Quisquam!
 			</p>
-			
-			<div>
-				<p>
-					INNER ipsum dolor sit amet consectetur <strong>adipisicing elit</strong>. Voluptates laboriosam tempora <em>reprehenderit</em> vitae ad culpa minima quibusdam voluptate et voluptatibus obcaecati qui eligendi corrupti impedit, fugit perferendis ab similique. Quisquam!
-				</p>
-	
-				<figure>
-					<img src='./Static/images/solid.jpg' alt='Image of solid transparent ball' />
-					<figcaption>Source: google.com</figcaption>
-				</figure>
-	
-				<p>
-					FIRST ipsum dolor, sit amet consectetur adipisicing elit. Ab saepe adipisci <abbr  title='World Wide Web'>WWW</abbr> asperiores fugit odio at ratione quo laborum accusantium nulla magnam nihil? Dolorum consequuntur molestias aspernatur consectetur distinctio?
-				</p>
-			</div>
+
+			<figure>
+				<img src='./Static/images/solid.jpg' alt='Image of solid transparent ball' />
+				<figcaption>Source: google.com</figcaption>
+			</figure>
+
+			<p>
+				FIRST ipsum dolor, sit amet consectetur adipisicing elit. Ab saepe adipisci <abbr  title='World Wide Web'>WWW</abbr> asperiores fugit odio at ratione quo laborum accusantium nulla magnam nihil? Dolorum consequuntur molestias aspernatur consectetur distinctio?
+			</p>
 		</section>
 
 		<section>
 			<h4>Videos</h4>
-			<figure>
-				<video controls>
-					<source src='./Static/videos/kubernetes.mp4' type='video/mp4'>
-					Your browser does not support the video tag.
-				</video>
-				<figcaption>Kubernetes the easy way</figcaption>
-			</figure>
+			<div class='videoHolder'>
+				<figure>
+					<video controls>
+						<source src='./Static/videos/kubernetes.mp4' type='video/mp4'>
+						Your browser does not support the video tag.
+					</video>
+					<figcaption>Kubernetes the easy way</figcaption>
+				</figure>
+				<figure>
+					<iframe src='https://www.youtube.com/embed/rrT6v5sOwJg' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+					<figcaption>Material design by google</figcaption>
+				</figure>
+			</div>
 			<p>
 				SECOND ipsum dolor sit amet consectetur adipisicing elit. Quam, officia! Libero assumenda impedit officiis cum tempora, dolore voluptas earum amet! Excepturi deserunt debitis assumenda quibusdam earum cupiditate fuga officiis dolores.
 			</p>
@@ -76,31 +76,20 @@
 			<blockquote>
 				asperiores fugit odio at ratione quo laborum accusantium nulla magnam nihil? Dolorum consequuntur molestias aspernatur consectetur distinctio?
 			</blockquote>
-
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur et minus enim temporibus ipsa debitis ab maiores odio aliquam nisi libero maxime distinctio sunt nobis hic facilis, recusandae fugiat ullam.</p>
-
-			<figure>
-				<iframe src='https://www.youtube.com/embed/rrT6v5sOwJg' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
-				<figcaption>Material design by google</figcaption>
-			</figure>
-
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptate nesciunt animi maiores deleniti illo optio excepturi ea fugit facere similique, qui, neque totam doloribus dolore molestiae sint nihil aliquam.
-			</p>
 		</section>
 
 		<section>
 			<h4>Lists</h4>
 			<div id='listHolder'>
 				<ul>
-					<li>Bacon</li>
-					<li>Mangoes</li>
-					<li>Plum</li>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis recusandae itaque ipsum. Laudantium ex pariatur, ipsum in, nemo sunt facilis at voluptas ipsam temporibus unde distinctio. Libero, magni nisi.</li>
+					<li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati magnam non, rem, facilis dolores quos iure, quidem vel porro minus facere id dolor et eius sit consequatur doloribus similique fuga!</li>
+					<li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium laborum nulla omnis aliquam iste. Magnam ea unde obcaecati, nobis nulla incidunt fuga neque voluptates ducimus est omnis enim corrupti. Ducimus?</li>
 				</ul>
 				<ol>
-					<li>Bacon</li>
-					<li>Mangoes</li>
-					<li>Plum</li>
+					<li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste tenetur consectetur adipisci asperiores quisquam neque expedita aspernatur, architecto hic, nisi ipsa accusantium rem obcaecati explicabo, ut recusandae! Exercitationem, quo quos.</li>
+					<li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla quam nisi doloribus optio a maiores fuga cum provident, facilis voluptate minus nemo quaerat quas harum itaque ducimus ut quisquam quae.</li>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus natus maxime necessitatibus quos repudiandae odit tempore amet, sit reprehenderit dolor quam possimus vero ipsum earum. Aliquid expedita asperiores iure explicabo.</li>
 				</ol>
 			</div>
 		</section>

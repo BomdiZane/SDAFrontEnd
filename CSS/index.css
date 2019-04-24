@@ -8,20 +8,23 @@ section > div{
 	padding: 10px;
 }
 
-#listHolder{
+section > p{ padding: 0 30px; }
+
+.videoHolder, #listHolder{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: flex-start;
 }
 
-figure img{
-	width: 100%;
-	height: 300px;
-	border-radius: var(--default-radius);
+.videoHolder figure{ 
+	flex-basis: 300px;
+	flex-grow: 1;
 }
 
-figure video, figure iframe{
-	width: 580px;
+figure img, figure video, figure iframe{
+	width: 100%;
+	min-width: 320px;
 	height: 300px;
 	border-radius: var(--default-radius);
 }

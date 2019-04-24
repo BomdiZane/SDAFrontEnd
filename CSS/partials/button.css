@@ -1,12 +1,37 @@
-button{
-	padding: 8px 18px;
+button {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 14px 35px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
 	cursor: pointer;
-	font-size: 90%;
-	background-color: var(--default-blue);
-	color: var(--primary-white);
 	box-shadow: var(--default-shadow);
 	border-radius: 20px;
 	margin: 10px 0;
+	background: var(--primary-green);
+	background: -webkit-linear-gradient(to left, var(--secondary-green), var(--primary-green));
+	background: linear-gradient(to left, var(--secondary-green), var(--primary-green));
+	color: var(--secondary-black);
 }
 
-button:hover{ padding: 8px 30px; }
+input[type='submit']{
+	border: none;
+	margin: 30px 0;
+	padding: 8px 40px;
+	background: var(--primary-green);
+	background: -webkit-linear-gradient(to right, var(--secondary-green), var(--primary-green));
+	background: linear-gradient(to right, var(--secondary-green), var(--primary-green));
+	border-radius: var(--default-radius);
+	cursor: pointer;
+	color: var(--secondary-black);
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+button:active {	transform: scale(0.95); }
+
+button.ghost {
+	background: none;
+	background-color: transparent;
+	border: 1px solid var(--primary-white);
+}

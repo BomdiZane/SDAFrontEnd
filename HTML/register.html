@@ -11,13 +11,11 @@
 		<meta name='theme-color' content='#1888a8' />
 
 		<link rel='icon' type='image/x-icon' href='../static/images/icon.png' />
-		<link rel='stylesheet' href='../CSS/calculator.css'>
+		<link rel='stylesheet' href='../CSS/register.css'>
 		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous' />
-		<script src='../JS/calculator.js' defer></script>
+		<script src='../JS/register.js'></script>
 	</Head>
 	<body>
-		<noscript>You need to enable JavaScript to run this app!</noscript>
-
 		<!-- Page header -->
 		<header>
 			<div>
@@ -28,46 +26,65 @@
 				<a href='../index.html' title='Home'>
 					<i class='fas fa-home'></i>
 				</a>
-				<a href='05 blog.html' title='Blog'>
+				<a href='blog.html' title='Blog'>
 					<i class='fas fa-blog'></i>
 				</a>
-				<a href='06 calculator.html' class='selectedMenu' title='Calculator'>
+				<a href='calculator.html' title='Calculator'>
 					<i class='fas fa-calculator'></i>
 				</a>
-				<a href='07 register.html' title='Account'>
+				<a href='register.html' class='selectedMenu' title='Account'>
 					<i class='fas fa-user-circle'></i>
 				</a>
 			</nav>
 		</header>
 
 		<!-- Page content -->
-		<section>
-			<h4>Calculator</h4>
-			<div id='calculatorFrame'>
-				<span id='cellsc'>
-					<small id='history'>21 * 5</small>
-					<div id='results'>0</div>
-				</span>
-				<span id='cellc'>C</span>
-				<span id='cellr' class='control'>%</span>
-				<span id='celld' class='control'>/</span>
-				<span id='cell1'>1</span>
-				<span id='cell2'>2</span>
-				<span id='cell3'>3</span>
-				<span id='cellm' class='control'>x</span>
-				<span id='cell4'>4</span>
-				<span id='cell5'>5</span>
-				<span id='cell6'>6</span>
-				<span id='cells' class='control'>-</span>
-				<span id='cell7'>7</span>
-				<span id='cell8'>8</span>
-				<span id='cell9'>9</span>
-				<span id='cella' class='control'>+</span>
-				<span id='cell0'>0</span>
-				<span id='cellp'>.</span>
-				<span id='celle'>=</span>
+		<div id='formHolder'>
+			<div class='form-container sign-up-container'>
+				<form action='#'>
+					<h1>Create Account</h1>
+					<div class='social-container'>
+						<a href='#' class='social'><i class='fab fa-facebook-f'></i></a>
+						<a href='#' class='social'><i class='fab fa-google-plus-g'></i></a>
+						<a href='#' class='social'><i class='fab fa-linkedin-in'></i></a>
+					</div>
+					<span>or use your email for registration</span>
+					<input type='text' placeholder='Name' />
+					<input type='email' placeholder='Email' />
+					<input type='password' placeholder='Password' />
+					<button>Sign Up</button>
+				</form>
 			</div>
-		</section>
+			<div class='form-container sign-in-container'>
+				<form action='#'>
+					<h1>Sign in</h1>
+					<div class='social-container'>
+						<a href='#' class='social'><i class='fab fa-facebook-f'></i></a>
+						<a href='#' class='social'><i class='fab fa-google-plus-g'></i></a>
+						<a href='#' class='social'><i class='fab fa-linkedin-in'></i></a>
+					</div>
+					<span>or use your account</span>
+					<input type='email' placeholder='Email' />
+					<input type='password' placeholder='Password' />
+					<a href='#'>Forgot your password?</a>
+					<button>Sign In</button>
+				</form>
+			</div>
+			<div class='overlay-container'>
+				<div class='overlay'>
+					<div class='overlay-panel overlay-left'>
+						<h1>Welcome Back!</h1>
+						<p>To keep connected with us please login with your personal info</p>
+						<button class='ghost' id='signIn'>Sign In</button>
+					</div>
+					<div class='overlay-panel overlay-right'>
+						<h1>Hello, Friend!</h1>
+						<p>Enter your personal details and start journey with us</p>
+						<button class='ghost' id='signUp'>Sign Up</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Page footer -->
 		<footer>

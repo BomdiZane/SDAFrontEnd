@@ -10,12 +10,14 @@ caption{
 	cursor: default;
 }
 
-tr{
-	box-shadow: var(--default-shadow);
-}
-
+tr{ box-shadow: var(--default-shadow); }
 tr:nth-child(odd){ background-color: var(--secondary-white); }
 tr:nth-child(even){ background-color: var(--primary-white); }
+thead tr:first-child{ 
+	background: var(--primary-green);
+	background: -webkit-linear-gradient(to right, var(--secondary-green), var(--primary-green));
+	background: linear-gradient(to right, var(--secondary-green), var(--primary-green));
+}
 
 td, th{
 	min-width: 100px;
@@ -24,5 +26,5 @@ td, th{
 	color: var(--secondary-black);
 	border-radius: var(--default-radius);
 }
-th{ background-color: lightblue; }
+th{ background-color: transparent; }
 td{	text-align: left; }
