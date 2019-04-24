@@ -1,0 +1,87 @@
+@import 'partials/template.css';
+@import 'partials/form.css';
+
+section{
+	margin: 20vh 0;
+}
+
+#calculatorFrame{
+	width: 300px;
+	display: grid;
+	grid-gap: 1px;
+	grid-template-columns: repeat(4 1fr);
+	grid-template-areas: 
+		'cellsc cellsc cellsc cellsc'
+		'cellc  cellc  cellr  celld'
+		'cell1  cell2  cell3  cellm'
+		'cell4  cell5  cell6  cells'
+		'cell7  cell8  cell9  cella'
+		'cell0  cell0  cellp  celle';
+	background-color: lightgreen;
+}
+
+#calculatorFrame span{
+	min-width: 50px;
+	min-height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: var(--default-radius);
+	box-shadow: var(--default-shadow);
+	background-color: var(--secondary-white);
+	cursor: pointer;
+	user-select: none;
+}
+#calculatorFrame span:hover{ background-color: var(--primary-white); }
+
+#cellsc{
+	grid-area: cellsc;
+	cursor: text !important;
+	background-color: var(--secondary-white) !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 5px 10px;
+}
+
+#history, #results{
+	text-align: right;
+	width: 100%;
+}
+#history{
+	color: var(--secondary-grey);
+}
+#results{
+	font-size: 2.5rem;
+	padding: 0;
+}
+
+#cellc{ grid-area: cellc; }
+#celle{ grid-area: celle; }
+#cellr{ grid-area: cellr; }
+#celld{ grid-area: celld; }
+#cellm{ grid-area: cellm; }
+#cells{ grid-area: cells; }
+#cella{ grid-area: cella; }
+#cellp{ grid-area: cellp; }
+#cell0{ grid-area: cell0; }
+#cell1{ grid-area: cell1; }
+#cell2{ grid-area: cell2; }
+#cell3{ grid-area: cell3; }
+#cell4{ grid-area: cell4; }
+#cell5{ grid-area: cell5; }
+#cell6{ grid-area: cell6; }
+#cell7{ grid-area: cell7; }
+#cell8{ grid-area: cell8; }
+#cell9{ grid-area: cell9; }
+
+#calculatorFrame .control{ background-color: var(--primary-yellow); }
+#calculatorFrame #celle, #calculatorFrame #cellc{ background-color: var(--primary-green); }
+
+#calculatorFrame .control:hover, #calculatorFrame #celle:hover, #calculatorFrame #cellc:hover{ background-color: var(--primary-green); }
+
+
+#results{
+	overflow: hidden;
+}

@@ -1,0 +1,28 @@
+table{
+	margin: 20px 0;
+	border-spacing: 0px 5px;
+	font-size: 90%;
+	caption-side: top;
+}
+
+caption{
+	color: var(--info-color);
+	cursor: default;
+}
+
+tr{
+	box-shadow: var(--default-shadow);
+}
+
+tr:nth-child(odd){ background-color: var(--secondary-white); }
+tr:nth-child(even){ background-color: var(--primary-white); }
+
+td, th{
+	min-width: 100px;
+	padding: 12px 15px;
+	cursor: default;
+	color: var(--secondary-black);
+	border-radius: var(--default-radius);
+}
+th{ background-color: lightblue; }
+td{	text-align: left; }

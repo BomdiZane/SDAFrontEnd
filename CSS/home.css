@@ -1,0 +1,27 @@
+@import 'partials/template.css';
+@import 'partials/form.css';
+@import 'partials/table.css';
+@import 'partials/button.css';
+
+section > div{
+	width: 100%;
+	padding: 10px;
+}
+
+#listHolder{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+figure img{
+	width: 100%;
+	height: 300px;
+	border-radius: var(--default-radius);
+}
+
+figure video, figure iframe{
+	width: 580px;
+	height: 300px;
+	border-radius: var(--default-radius);
+}

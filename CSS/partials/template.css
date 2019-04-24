@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Roboto');
+/*FONTS*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:400,800|Indie+Flower);
 
 @import 'header.css';
 @import 'footer.css';
@@ -29,53 +30,75 @@
 *{
 	box-sizing: border-box;
 	transition: all 0.1s ease-out;
-	border: none;
 	outline: none;
-}
-
-input[type='submit']{
 	border: none;
-	cursor: pointer;
-	background-color: var(--primary-green);
 }
 
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+h2 { text-align: center; }
+p, h1, h2, h3, h4, h5, h6{ cursor: default; }
+
+input[type='radio']{ cursor: pointer; }
+input[type='submit']{
+	margin: 30px 0;
+	padding: 8px 40px;
+	background-color: var(--primary-green);
+	border-radius: var(--default-radius);
+	cursor: pointer;
+	color: var(--secondary-black);
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 input[type='submit']:hover{
 	border: none;
+	text-shadow: 0 4px 8px rgba(0,0,0,0.1);
 	background-color: var(--secondary-green);
 }
 
-body{
-	font-family: 'Indie Flower';
-	margin: 0;
-	background-color: var(--secondary-white);
-	padding-top: 50px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-}
-
-.brandName{
-	margin: 0 30px;
-	font-size: 1.6rem;
-}
-
-.brandName span{
-	color: var(--primary-green);
+i{
+	font-size: 20px;
+	cursor: pointer;
 }
 
 a{
 	text-decoration: none;
-	margin: 0;
-	color: var(--secondary-grey);
-}
-
-a:hover{
+	cursor: pointer;
 	color: var(--default-blue);
 }
 
+body{
+	margin: 0;
+	font: large 'Indie Flower';
+	background-color: var(--secondary-white);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 60px;
+}
+
+.brandName{
+	width: 280px;
+	margin: 0 10px;
+	font-size: 1.6rem;
+	color: var(--secondary-white);
+	cursor: default;
+	
+}
+.brandName span{ 
+	color: var(--primary-green);
+	margin: 0 5px;
+}
+
+/*Section*/
 section{
-	width: 72vw;
+	width: 70vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -83,7 +106,18 @@ section{
 	padding: 20px;
 	margin: 20px 0;
 	overflow: hidden;
-	background-color: var(--primary-white);
-	border-radius: var(--default-radius);
 	box-shadow: var(--default-shadow);
+	background-color: white;
+
+}
+h4{
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 2rem;
+	color: var(--default-blue);
+}
+
+/*Media Queries*/
+@media(max-width: 480px){
+	body{ font-size: 14px; }
 }
