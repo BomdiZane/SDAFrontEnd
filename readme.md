@@ -10,5 +10,5 @@ After completing this app the trainees should be ready to take on more advanced 
 
 Adombang Munang Mbomndih (Bomdi Zane)
 
-* *Full Stack Javascript Developer at Kuehne+Nagel*
-* *Trainer at Software Development Academy*
+* *Full-stack Javascript Developer @ Kuehne+Nagel*
+* *Trainer @ Software Development Academy*
