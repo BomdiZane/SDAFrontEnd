@@ -96,6 +96,14 @@ section{
 
 }
 
+noscript{
+	width: 100%;
+	background-color: var(--secondary-yellow);
+	color: var(--secondary-white);
+	text-align: center;
+	padding: 10px;
+}
+
 /* Media Queries */
 @media(max-width: 480px){
 	body{ font-size: 14px; }
