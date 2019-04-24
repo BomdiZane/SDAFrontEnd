@@ -43,11 +43,10 @@ footer a{
 	font-family: 'Lucida Sans Unicode', Roboto, sans-serif;
 }
 
-footer form{
-	max-width: 400px;
-}
+footer form{ max-width: 400px; }
+#error{ color: var(--primary-red); }
 
-footer small{
+#copy{
 	position: absolute;
 	left: 5%;
 	bottom: 10px;
